@@ -96,13 +96,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</nav>
 			<div class="jumbotron">
 				<h1>
-					Hello, world!
+					<?php echo $tag;?>
 				</h1>
 				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+					<?php echo $tag;?>
 				</p>
 				<p>
-					 <a class="btn btn-primary btn-large" href="/index.php/detail">Learn more</a>
+					 <a class="btn btn-primary btn-large" href="/index.php/detail"><?php echo $tag;?></a>
 				</p>
 			</div>
 			<div class="carousel slide" id="carousel-221512">
@@ -116,7 +116,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img alt="" class="center-block" src="/imgs/4.png" />
+						<!-- <img alt="" class="center-block" src="/imgs/4.png" /> -->
+						<img alt="" class="center-block" src=<?php echo $img;?> />
 						<div class="carousel-caption">
 							<h4>
 								First Thumbnail label
