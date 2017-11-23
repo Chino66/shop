@@ -26,10 +26,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					 </button> 
+					 <a class="navbar-brand" href="/index.php/shop">首页</a>
 				</div>
 				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active">
 							 <a href="#">Link</a>
@@ -91,20 +97,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				
 			</nav>
+<!--==========巨幕==========-->
 			<div class="jumbotron">
 				<h1>
-					<?php echo $tag;?>
+					<?php echo $title;?>
 				</h1>
 				<p>
-					<?php echo $tag;?>
+					<?php echo $content;?>
 				</p>
 				<p>
-					 <a class="btn btn-primary btn-large" href="/index.php/detail"><?php echo $tag;?></a>
+					 <a class="btn btn-primary btn-large" href="/index.php/detail"><?php echo $recomment;?></a>
 				</p>
 			</div>
+<!--==========滚动图==========-->
 			<div class="carousel slide" id="carousel-221512">
 				<ol class="carousel-indicators">
 					<li class="active" data-slide-to="0" data-target="#carousel-221512">
@@ -151,35 +159,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div> <a class="left carousel-control" href="#carousel-221512" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-221512" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
+
+<!--==========缩略图==========-->
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="/imgs/4.png" />
+						<img alt="300x200" src=<?php echo $item1_img;?> />
 						<div class="caption">
 							<h3>
-								Thumbnail label
+								<?php echo $item1_title;?>
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								<?php echo $item1_tag;?>
 							</p>
 							<p>
-								 <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								 <a class="btn btn-primary" href="/index.php/detail/show/1">Action</a> <a class="btn" href="/index.php/detail/show/1">Action</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="/imgs/2.png" />
+						<img alt="300x200" src=<?php echo $item2_img;?> />
 						<div class="caption">
 							<h3>
-								Thumbnail label
+								<?php echo $item2_title;?>
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								<!-- <?php echo $item1_content;?> -->
 							</p>
 							<p>
-								 <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								 <a class="btn btn-primary" href="/index.php/detail/show/2">Action</a> <a class="btn" href="/index.php/detail/show/2">Action</a>
 							</p>
 						</div>
 					</div>

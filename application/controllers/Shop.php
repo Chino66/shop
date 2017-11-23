@@ -21,9 +21,42 @@ class Shop extends CI_Controller {
 		// 	echo "none";
 		// }
 
-		$data['tag'] = "Tag";
+		$data['title'] = "SDFShop";
+		$data['content'] = "欢迎来到SDFShop，精美商品等你发现···";
+		$data['recomment'] = "推荐商品";
+
+		//商品资源初始化
+		for ($x=1; $x<=12; $x++) 
+		{
+			$itemname = "item".$x;
+			$data[$itemname.'_img'] = "/asset/shop/imgs/".$itemname."_1.jpg";
+			$data[$itemname.'_title'] = $this->getTitle("asset/shop/docs/".$itemname.".txt");
+			$data[$itemname.'_tag'] = "2017秋冬新款&nbsp热销商品";
+
+		} 
 		$data['img'] = "/imgs/4.png";
+		//$data['item1_img'] = "/asset/shop/imgs/item1_1.jpg";
+		//$data['item1_title'] = "青木优品2017秋冬新款韩版ulzzang流苏毛毛鞋獭兔毛羊绒浅口鞋";
+		//$data['item1_content'] = "【青木说】韩版毛毛鞋时装版<br/>搭配流苏简直美爆啦<br/>獭兔毛烫底非常舒适";
+		
+		
 		$this->load->view('shop',$data);
+	}
+	
+	//读取商品标题
+	function getTitle($path)
+	{
+		if(file_exists($path))
+		{
+			$fp = fopen($path,"r");
+			$str = fgets($fp);
+			$str = str_replace("\r\n","<br />",$str);
+			return $str;
+		}
+		else 
+		{
+			return "无标题";
+		}
 	}
 
 	function read($path)

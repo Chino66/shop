@@ -26,10 +26,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="/index.php/shop">首页</a>
 				</div>
 				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active">
 							 <a href="#">Link</a>
@@ -91,16 +91,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				
 			</nav>
 			<div class="page-header">
 				<h1>
 					Example page header <small>Subtext for header</small>
 				</h1>
-			</div><img alt="140x140" src="/imgs/1.png" class="img-rounded" />
-						<dl>
+			</div>
+			<img alt="140x140" src=<?php echo $item_img;?> class="img-rounded" />
+			<dl>
 				<dt>
+					<?php echo $item_doc;?>
+				</dt>
+<!-- 				<dt>
 					Description lists
 				</dt>
 				<dd>
@@ -126,7 +130,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</dt>
 				<dd>
 					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				</dd>
+				</dd> -->
 			</dl>
 			<p>
 				 <em>Git</em> 是一个分布式的版本控制系统，最初由 <strong>Linus Torvalds</strong> 编写，用作Linux内核代码的管理。在推出后，Git在其它项目中也取得了很大成功，尤其是在 <small>Ruby</small> 社区中。
