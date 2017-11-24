@@ -35,10 +35,6 @@ class Shop extends CI_Controller {
 
 		} 
 		$data['img'] = "/imgs/4.png";
-		//$data['item1_img'] = "/asset/shop/imgs/item1_1.jpg";
-		//$data['item1_title'] = "青木优品2017秋冬新款韩版ulzzang流苏毛毛鞋獭兔毛羊绒浅口鞋";
-		//$data['item1_content'] = "【青木说】韩版毛毛鞋时装版<br/>搭配流苏简直美爆啦<br/>獭兔毛烫底非常舒适";
-		
 		
 		$this->load->view('shop',$data);
 	}

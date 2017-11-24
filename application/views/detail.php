@@ -21,6 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <!--####################################################################################################-->	
+<!--==========导航栏==========-->
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
@@ -99,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					Example page header <small>Subtext for header</small>
 				</h1>
 			</div>
-			<img alt="140x140" src=<?php echo $item_img;?> class="img-rounded" />
+			<img width="40%" height="40% alt="140x140" src=<?php echo $item_img;?> class="img-rounded" />
 			<dl>
 				<dt>
 					<?php echo $item_doc;?>
