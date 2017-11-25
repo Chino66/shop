@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php echo $content;?>
 				</p>
 				<p>
-					 <a class="btn btn-primary btn-large" href="/index.php/detail"><?php echo $recomment;?></a>
+					 <a class="btn btn-primary btn-large" href="/index.php/detail/show/1"><?php echo $recomment;?></a>
 				</p>
 			</div>
 <!--==========标题==========-->
@@ -81,25 +81,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="carousel-inner">
 					<div class="item active">
 						<!-- <img alt="" class="center-block" src="/imgs/4.png" /> -->
-						<img alt="" width="50%" height="50%" class="center-block" src=<?php echo $item1_img;?> />
+						<a href="/index.php/detail/show/1">
+							<img alt="" width="50%" height="50%" class="center-block" src=<?php echo $item1_img;?> />
+						</a>
 						<div class="carousel-caption">
 							<h4>
 								<?php echo $item1_title;?>
 							</h4>
 						</div>
 					</div>
-					<div class="item active">
+					<div class="item">
 						<!-- <img alt="" class="center-block" src="/imgs/4.png" /> -->
-						<img alt="" width="50%" height="50%" class="center-block" src=<?php echo $item2_img;?> />
+						<a href="/index.php/detail/show/2">
+							<img alt="" width="50%" height="50%" class="center-block" src=<?php echo $item2_img;?> />
+						</a>
 						<div class="carousel-caption">
 							<h4>
 								<?php echo $item2_title;?>
 							</h4>
 						</div>
 					</div>
-					<div class="item active">
+					<div class="item">
 						<!-- <img alt="" class="center-block" src="/imgs/4.png" /> -->
-						<img alt="" width="50%" height="50%" class="center-block" src=<?php echo $item3_img;?> />
+						<a href="/index.php/detail/show/3">
+							<img alt="" width="50%" height="50%" class="center-block" src=<?php echo $item3_img;?> />
+						</a>
 						<div class="carousel-caption">
 							<h4>
 								<?php echo $item3_title;?>
@@ -328,7 +334,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 <!--==========页尾==========-->
 <hr/>
-
+		<p class="text-center"><small><a href="/index.php/shop">联系我们</a></small></p>
 		</div>
 	</div>
 </div>
